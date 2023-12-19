@@ -1,3 +1,3 @@
 ## NextTwitch
 
-Next + Clerk + LiveKit Streaming Platform
+Next + Prisma + Clerk + LiveKit Streaming Platform
