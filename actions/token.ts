@@ -5,7 +5,7 @@ import { AccessToken } from "livekit-server-sdk";
 
 import { getSelf } from "@/lib/auth-service";
 
-import { getUserbyId } from "@/lib/user-service";
+import { getUserById } from "@/lib/user-service";
 import { isBlockedByUser } from "@/lib/block-service";
 
 export const createViewerToken = async (hostIdentity: string) => {
@@ -19,7 +19,7 @@ export const createViewerToken = async (hostIdentity: string) => {
     self = { id, username };
   }
 
-  const host = await getUserbyId(hostIdentity);
+  const host = await getUserById(hostIdentity);
 
   if (!host) throw new Error("User not Found");
 
